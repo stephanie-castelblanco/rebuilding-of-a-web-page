@@ -17,7 +17,7 @@
       background-image: url('https://i0.wp.com/itravelwise.com/wp-content/uploads/2020/12/Compass-1.png?resize=913%2C631&ssl=1');
       background-size: cover;
       background-repeat: no-repeat;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
       display: flex;
       flex-direction: column;
       height: 100vh; /* Adjusted for full viewport height */
@@ -76,7 +76,7 @@
 
 </head>
 <body class="text-white">
-
+<div class="container">
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
   <div class="container">
@@ -153,6 +153,7 @@
   </div>
 </nav>
 
+
 <!-- Main Content -->
 <div class="container d-flex align-items-center justify-content-center" style="min-height: 70vh;">
   <div class="row">
@@ -161,7 +162,7 @@
     </div>
   </div>
 </div>
-
+</div>
 <!-- Footer -->
 
 <div class="mt-auto">
@@ -171,15 +172,15 @@
     </div>
     <form>
       <div class="mb-3">
-        <label for="name" class="form-label">Name</label>
+        <label for="name" class="form-label text-muted">Name</label>
         <input type="text" class="form-control" id="name">
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Email <span style="color: red;">*</span></label>
+        <label for="email" class="form-label text-muted">Email <span style="color: red;">*</span></label>
         <input type="email" class="form-control" id="email">
       </div>
       <div class="mb-3">
-        <label for="message" class="form-label">Message <span style="color: red;">*</span></label>
+        <label for="message" class="form-label text-muted">Message <span style="color: red;">*</span></label>
         <textarea class="form-control" id="message" rows="4"></textarea>
       </div>
       <!-- Inside your form where the button is -->
@@ -187,6 +188,5 @@
     </form>
   </div>
 </div>
-
 </body>
 </html>
