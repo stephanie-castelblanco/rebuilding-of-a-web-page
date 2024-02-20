@@ -1,0 +1,10 @@
+/* Underline for Contact title */
+.contact-title {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+h3{
+  color: black;
+}
