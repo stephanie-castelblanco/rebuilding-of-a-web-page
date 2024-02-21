@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville|Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville|Albert+Sans|Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
   <style>
 
@@ -28,33 +28,12 @@
     }
 
 
+
     .contact-title {
       display: block; /* Changed from inline-block to block */
       border-bottom: 5px solid white;
       font-weight: bold;
       margin: 0; /* Reset margin */
-    }
-
-
-    /* Footer styles */
-    .footer-container {
-      background-color: #fff;
-      flex-grow: 1; /* Adjusted to take the necessary space */
-      display: flex;
-      justify-content: center; /* Centered content */
-      align-items: center; /* Centered content vertically */
-      padding: 2rem;
-    }
-
-    .footer-container h2 {
-      font-family: 'Montserrat', sans-serif;
-      margin-bottom: 1rem;
-      font-style: italic;
-    }
-
-    .footer-form {
-      width: 100%;
-      max-width: 600px;
     }
 
     /* Custom button styles */
@@ -67,24 +46,45 @@
       font-size: 1.125em;
       border: none;
     }
+
+
     .custom-btn:hover {
       color: white;
       background-color: #e2b42b;
 
+    }
 
+    /* Footer styles */
+
+    .footer-container h2 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .footer h5 {
+      font-family: 'Albert Sans', sans-serif;
+      margin-top: 5rem;
+      margin-bottom: 2rem; /* Adds space below the heading */
+    }
+
+    .navbar-custom {
+      padding: 0.5rem 1rem; /* Adjust the padding to your preference */
+    }
   </style>
 
 </head>
 <body class="text-white">
 <div class="container">
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom sticky-top">
+
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse p-3" id="navbarNav">
+    <div class="collapse navbar-collapse p-2" id="navbarNav">
       <ul class="navbar-nav mx-auto" style="font-size: 0.9rem;">
 
         <li class="nav-item">
@@ -143,11 +143,11 @@
         <li class="nav-item">
           <span class="nav-link text-white separator">|</span>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-secondary" href="#">
-            <i class="bi bi-cart"></i> 0
-          </a>
-        </li>
+
+        <a class="nav-link text-secondary" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="No products in the cart">
+          <i class="bi bi-cart"></i> 0
+        </a>
+
       </ul>
     </div>
   </div>
@@ -155,7 +155,7 @@
 
 
 <!-- Main Content -->
-<div class="container d-flex align-items-center justify-content-center" style="min-height: 70vh;">
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 50vh;">
   <div class="row">
     <div class="col text-center">
       <h1 class="contact-title" style="font-size: 2.9rem; padding: 15px;">Contact</h1>
@@ -163,8 +163,8 @@
   </div>
 </div>
 </div>
-<!-- Footer -->
 
+<!-- Footer -->
 <div class="mt-auto">
   <div class="bg-white text-dark p-5">
     <div class="container text-center py-5">
@@ -187,6 +187,52 @@
       <button type="submit" class="btn btn-primary custom-btn shadow no-border" >CONTACT US</button>
     </form>
   </div>
+  <!-- Footer -->
+  <footer class="footer mt-auto text-white" style="background-color: #000000;">
+    <div class="container pt-8 pb-3">
+      <div class="row">
+        <div class="col-md-2">
+          <h5>ABOUT TRAVELWISE</h5>
+          <p class="fst-italic fs-sm-0">Travelwise International is a full-service luxury travel agency that specializes in bespoke travel experiences offering everything from commercial air to custom tours, villas, spas, and cruises.</p>
+          <div class="footer-text text-decoration-underline">
+            <div>Subscrie to out newsletter</div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <h5>RECENT POSTS</h5>
+          <ul class="list-unstyled footer-text">
+            <li class="text-decoration-underline">TESTING</li>
+            <li class="text-decoration-underline">Applying For Your Passport in 2022</li>
+            <li class="text-decoration-underline">Tell Congress to Advance the Deployment of the Vaccine to the Philippines</li>
+            <li class="text-decoration-underline">(no title)</li>
+            <li class="text-decoration-underline">What is the Balikbayan Program for the Philippines?</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>FOLLOW US</h5>
+          <div class="mt-2">
+            <!-- Social icons using Bootstrap Icons with increased size using fs-1, fs-2, etc. -->
+            <a href="#" class="text-white me-2 fs-1"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-2 fs-1"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-2 fs-1"><i class="bi bi-youtube"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-3">
+          <h5>RECENT PHOTOS</h5>
+          <!-- Placeholder for photos -->
+          <div class="row mt-3">
+            <div class="col-6 mb-2">
+              <img src="path-to-photo" class="img-fluid" alt="Recent Photo">
+            </div>
+            <!-- Add more photo placeholders or actual photos as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
