@@ -1,25 +1,31 @@
-/* style.css */
-
 body {
   font-family: 'Libre Baskerville', serif;
   font-weight: bold;
   background-image: url('https://i0.wp.com/itravelwise.com/wp-content/uploads/2020/12/Compass-1.png?resize=913%2C631&ssl=1');
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+.nav-link:hover {
+  color: white;
+}
+
 .contact-title {
+  display: block;
   border-bottom: 5px solid white;
   font-weight: bold;
+  margin: 0;
 }
 
 .custom-btn {
   background-color: #32373c;
   border-radius: 9999px;
+  box-shadow: #e2b42b;
+  text-decoration: none;
   padding: calc(0.667em + 2px) calc(1.333em + 2px);
   font-size: 1.125em;
   border: none;
@@ -30,30 +36,55 @@ body {
   background-color: #e2b42b;
 }
 
-/* Bootstrap does not include custom font-families in its utility classes */
+.footer-container h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
 .footer h5 {
   font-family: 'Albert Sans', sans-serif;
-}
-
-/* Assuming the .footer-text class is for elements you want to underline and change the color */
-.footer-text {
-  color: #999999; /* Bootstrap does not have a gray-600 utility for text */
-  text-decoration: underline;
-}
-
-/* Custom CSS for additional footer spacing */
-.footer-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .navbar-custom {
   padding: 0.5rem 1rem;
 }
 
-/* Bootstrap Icons adjusted size */
-.bi {
-  font-size:
-
+/* Ensures the images are the correct size */
+.recent-photos img {
+  width: 100%; /* makes image responsive */
+  margin-bottom: 0.5rem; /* adds space below each image */
 }
+
+/* Large images */
+.large-photo {
+  height: 170px; /* fixed height for large images */
+  object-fit: cover; /* ensures the images cover the area without distortion */
+}
+
+/* Small images */
+.small-photo {
+  height: 200px; /* fixed height for small images */
+  object-fit: cover; /* ensures the images cover the area without distortion */
+}
+
+/* Ensure consistent padding and margins in the footer */
+.footer-row {
+  margin-right: 0rem;
+  margin-left: 0rem;
+}
+
+.footer-row > [class*='col-'] {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+
+.fixed-height {
+  height: 170px; /* Example fixed height */
+  object-fit: cover; /* This will cover the area of the div without distorting the image */
+}
+
+
 
